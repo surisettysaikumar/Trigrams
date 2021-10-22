@@ -2,7 +2,6 @@ package textGenerator;
 
 import utilities.Properties;
 import utilities.Helper;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -40,6 +39,8 @@ public class TextGenerator {
 		this.resultingText = generatedText.substring(0, generatedText.length() - 1);
 	}
 
+	// generate Text method will take trigram map as input and generates output text
+	
 	public void generateText(Map<String, ArrayList<String>> trigram) {
 		List<String> generatedList = new ArrayList<>();
 		List<String> trigramKeys = new ArrayList<>(trigram.keySet());
