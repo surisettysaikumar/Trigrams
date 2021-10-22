@@ -49,6 +49,8 @@ public class TrigramGenerator {
 		}
 	}
 	
+	// generateTrigram method takes List of strings captured from input text file and generates map
+	
 	private void generateTrigram(ArrayList<String> input) {
 		for (int i = 0; i < input.size() - 2; i++) {
 			String trigramKey = Helper.concatenate(Helper.stripKey(input.get(i)), Helper.stripKey(input.get(i + 1)));
